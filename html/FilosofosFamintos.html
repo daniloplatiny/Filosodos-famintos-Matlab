@@ -1,0 +1,256 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>FilosofosFamintos</title><meta name="generator" content="MATLAB 8.5"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2016-05-15"><meta name="DC.source" content="FilosofosFamintos.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h2>Contents</h2><div><ul><li><a href="#2">Entrada de valores</a></li><li><a href="#3">Declaracao das variaveis</a></li><li><a href="#4">Logica principal</a></li></ul></div><pre class="codeinput"><span class="comment">% Filosofos Famintos</span>
+<span class="comment">% Alunos :  Attyla Fellipe e Danilo Platiny</span>
+
+<span class="comment">% Prioridades</span>
+<span class="comment">% - Circular horario</span>
+<span class="comment">% - Quem terminou de comer pensa</span>
+<span class="comment">% - Quem comeu mais nao come</span>
+<span class="comment">% - Sempre o maior n&uacute;mero de filosofos possiveis ir&aacute; comer</span>
+</pre><pre class="codeoutput error">Error: File: C:\Users\Danilo\Desktop\eng. controle e aut\9&ordm; Periodo\SED\Filosodos famintos Matlab\FilosofosFamintos.m Line: 43 Column: 1
+At least one END is missing: the statement may begin here.
+</pre><h2>Entrada de valores<a name="2"></a></h2><pre class="codeinput">tempo = [5 2 1 3 5]; <span class="comment">% tempo para comer</span>
+
+quantidadeFilosofos = 5; <span class="comment">% Numero de Filosofos</span>
+</pre><h2>Declaracao das variaveis<a name="3"></a></h2><pre class="codeinput"><span class="comment">%Cria Hashis. Quando 1 os hashis estao sobre a mesa. Quando 0 os hashis</span>
+<span class="comment">%estao sendo utilizados.</span>
+hashis = ones(1,quantidadeFilosofos);
+
+<span class="comment">%Cria Filofosos</span>
+filosofos = ones(1,quantidadeFilosofos);
+
+<span class="comment">% Cria uma matriz de situacao para cada filosofo a dimensao da matriz &eacute;</span>
+<span class="comment">% superestimada para nao ocorrer erros.</span>
+<span class="comment">% 3 = Estado Para Logica interna  2 = Come , 1 = Pensa, 0 = Espera</span>
+matrizResultado = 3*ones(quantidadeFilosofos,sum(tempo)) ;
+
+<span class="comment">%Cria uma matriz eficiencia com a quantidade de vezes que o filosofo pensou</span>
+<span class="comment">%comeu e esperou</span>
+matrizEficiencia = zeros(quantidadeFilosofos,3);
+</pre><h2>Logica principal<a name="4"></a></h2><pre class="codeinput"><span class="comment">%Laco principal. Enquanto tiver comida (vetor de tempo) os filosofos</span>
+<span class="comment">%continuam na mesa</span>
+
+i = 1; <span class="comment">%Controle do vetor tempo</span>
+tempoAtual = 1; <span class="comment">%Controle das colunas</span>
+
+<span class="keyword">while</span> (i &lt;= length(tempo))
+
+    <span class="comment">%Laco para cada filosofo. Decide quem come</span>
+    <span class="keyword">for</span> a = 1:1:quantidadeFilosofos
+     <span class="comment">%Condicoes que s&oacute; ocorrem depois da primeira rodada</span>
+        <span class="keyword">if</span>(tempoAtual~= 1)
+        <span class="comment">%Descobre quem mais comeu ate a rodada atual</span>
+            <span class="comment">%filosofoComilao = oQueMaisComeu(matrizEficiencia);</span>
+       <span class="comment">%Se o filosofo tem que comer essa rodada pula para proximo filosofo</span>
+            <span class="keyword">if</span>(matrizResultado(a,tempoAtual) == 2)
+                <span class="keyword">continue</span>,
+        <span class="keyword">end</span>
+
+
+
+        <span class="comment">% Descobre quem mais comeu ate a rodada atual</span>
+           <span class="comment">%filosofoComilao = oQueMaisComeu(matrizEficiencia);</span>
+           filosofoComilao = 10;
+
+        <span class="comment">% Filosofo olha se os hashis estao disponiveis</span>
+            situacaoHashis = olharHashis(hashis, a);
+
+        <span class="comment">%Filoso pergunta se ele pode comer pelas prioridades</span>
+            oqueFazer = conferePrioridade(situacaoHashis, filosofoComilao,a);
+            <span class="keyword">if</span>(strcmp(oqueFazer,<span class="string">'podeComer'</span>))
+                hashis = atualizaHashis(hashis,a,<span class="string">'pega'</span>); <span class="comment">% Pega os hashis</span>
+                [matrizEficiencia, matrizResultado]  = come(matrizResultado, matrizEficiencia, tempo, a, i,tempoAtual); <span class="comment">% Atualiza as tabelas de resultado</span>
+                i = i + 1; <span class="comment">% Anda no vetor de tempo</span>
+                <span class="comment">%Se o vizinho iria pensar o filoso vai informar que agora</span>
+                <span class="comment">%</span>
+
+            <span class="keyword">elseif</span>(strcmp(oqueFazer,<span class="string">'podeEsperar'</span>))
+                [matrizEficiencia, matrizResultado] = espera(matrizResultado, matrizEficiencia, a,tempoAtual); <span class="comment">% Atualiza as tabelas de resultado</span>
+            <span class="keyword">elseif</span>(strcmp(oqueFazer,<span class="string">'podePensar'</span>))
+                [matrizEficiencia, matrizResultado] = pensa(matrizResultado, matrizEficiencia, a,tempoAtual); <span class="comment">% Atualiza as tabelas de resultado</span>
+            <span class="keyword">end</span>
+
+    <span class="keyword">end</span>
+
+    <span class="comment">%Avanca uma unidade de tempo</span>
+    tempoAtual = tempoAtual +1;
+
+    <span class="comment">%Confere se algum filosofo deve soltar os hashis para proxima rodada</span>
+     <span class="keyword">for</span> b = 1:1:quantidadeFilosofos
+        <span class="keyword">if</span>(matrizResultado(b,tempoAtual) == 2)
+            hashis = atualizaHashis(hashis,b,<span class="string">'solta'</span>);
+        <span class="keyword">end</span>
+
+     <span class="keyword">end</span>
+
+<span class="keyword">end</span>
+
+<span class="comment">%resultados()</span>
+</pre><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2015a</a><br></p></div><!--
+##### SOURCE BEGIN #####
+% Filosofos Famintos 
+% Alunos :  Attyla Fellipe e Danilo Platiny
+
+% Prioridades
+% - Circular horario
+% - Quem terminou de comer pensa
+% - Quem comeu mais nao come 
+% - Sempre o maior número de filosofos possiveis irá comer 
+
+
+%% Entrada de valores 
+
+tempo = [5 2 1 3 5]; % tempo para comer 
+
+quantidadeFilosofos = 5; % Numero de Filosofos
+
+
+%% Declaracao das variaveis 
+%Cria Hashis. Quando 1 os hashis estao sobre a mesa. Quando 0 os hashis
+%estao sendo utilizados.
+hashis = ones(1,quantidadeFilosofos);
+
+%Cria Filofosos 
+filosofos = ones(1,quantidadeFilosofos);
+
+% Cria uma matriz de situacao para cada filosofo a dimensao da matriz é
+% superestimada para nao ocorrer erros.
+% 3 = Estado Para Logica interna  2 = Come , 1 = Pensa, 0 = Espera
+matrizResultado = 3*ones(quantidadeFilosofos,sum(tempo)) ;
+
+%Cria uma matriz eficiencia com a quantidade de vezes que o filosofo pensou
+%comeu e esperou
+matrizEficiencia = zeros(quantidadeFilosofos,3);
+
+
+%% Logica principal 
+%Laco principal. Enquanto tiver comida (vetor de tempo) os filosofos
+%continuam na mesa
+
+i = 1; %Controle do vetor tempo
+tempoAtual = 1; %Controle das colunas
+
+while (i <= length(tempo))    
+     
+    %Laco para cada filosofo. Decide quem come
+    for a = 1:1:quantidadeFilosofos
+     %Condicoes que só ocorrem depois da primeira rodada
+        if(tempoAtual~= 1)         
+        %Descobre quem mais comeu ate a rodada atual
+            %filosofoComilao = oQueMaisComeu(matrizEficiencia);    
+       %Se o filosofo tem que comer essa rodada pula para proximo filosofo
+            if(matrizResultado(a,tempoAtual) == 2)
+                continue,
+        end
+        
+          
+   
+        % Descobre quem mais comeu ate a rodada atual
+           %filosofoComilao = oQueMaisComeu(matrizEficiencia); 
+           filosofoComilao = 10;
+        
+        % Filosofo olha se os hashis estao disponiveis
+            situacaoHashis = olharHashis(hashis, a);
+            
+        %Filoso pergunta se ele pode comer pelas prioridades
+            oqueFazer = conferePrioridade(situacaoHashis, filosofoComilao,a);
+            if(strcmp(oqueFazer,'podeComer')) 
+                hashis = atualizaHashis(hashis,a,'pega'); % Pega os hashis
+                [matrizEficiencia, matrizResultado]  = come(matrizResultado, matrizEficiencia, tempo, a, i,tempoAtual); % Atualiza as tabelas de resultado
+                i = i + 1; % Anda no vetor de tempo
+                %Se o vizinho iria pensar o filoso vai informar que agora
+                %
+                
+            elseif(strcmp(oqueFazer,'podeEsperar'))
+                [matrizEficiencia, matrizResultado] = espera(matrizResultado, matrizEficiencia, a,tempoAtual); % Atualiza as tabelas de resultado
+            elseif(strcmp(oqueFazer,'podePensar'))
+                [matrizEficiencia, matrizResultado] = pensa(matrizResultado, matrizEficiencia, a,tempoAtual); % Atualiza as tabelas de resultado
+            end
+            
+    end
+    
+    %Avanca uma unidade de tempo 
+    tempoAtual = tempoAtual +1;
+    
+    %Confere se algum filosofo deve soltar os hashis para proxima rodada
+     for b = 1:1:quantidadeFilosofos
+        if(matrizResultado(b,tempoAtual) == 2)
+            hashis = atualizaHashis(hashis,b,'solta');
+        end
+     
+     end
+
+end
+
+%resultados()
+ 
+
+##### SOURCE END #####
+--></body></html>
